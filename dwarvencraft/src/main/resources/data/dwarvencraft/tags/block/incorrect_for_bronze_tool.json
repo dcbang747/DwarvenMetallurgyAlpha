@@ -1,1 +1,15 @@
-{"replace":false,"values":["#minecraft:incorrect_for_diamond_tool"]}
+{
+  "replace": false,
+  "values": [
+    "minecraft:gold_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:raw_gold_block",
+    "dwarvencraft:silver_ore",
+    "dwarvencraft:deepslate_silver_ore",
+    "minecraft:diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:diamond_block",
+    "minecraft:obsidian",
+    "minecraft:ancient_debris"
+  ]
+}

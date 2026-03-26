@@ -3,7 +3,10 @@
   "minVersion": "0.8",
   "package": "com.dwarvencraft.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "BlastFurnaceFuelMixin",
+    "DiamondNerfMixin"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1
