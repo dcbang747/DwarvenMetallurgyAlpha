@@ -1,0 +1,6 @@
+{
+  "layers": {
+    "humanoid": [{"texture": "dwarvencraft:steel"}],
+    "humanoid_leggings": [{"texture": "dwarvencraft:steel"}]
+  }
+}

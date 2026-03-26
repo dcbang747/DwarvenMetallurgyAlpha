@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CC",
+    " S",
+    " S"
+  ],
+  "key": {
+    "C": "dwarvencraft:steel_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "dwarvencraft:steel_hoe",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "LLL",
+    "BBB"
+  ],
+  "key": {
+    "F": "minecraft:flint",
+    "L": "minecraft:leaf_litter",
+    "B": "dwarvencraft:stick_bundle"
+  },
+  "result": {
+    "id": "minecraft:campfire",
+    "count": 1,
+    "components": {
+      "minecraft:block_state": {
+        "lit": "false"
+      }
+    }
+  }
+}

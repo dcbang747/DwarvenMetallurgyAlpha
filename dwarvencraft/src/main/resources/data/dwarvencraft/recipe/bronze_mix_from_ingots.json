@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "id": "dwarvencraft:tin_ingot"
+    },
+    {
+      "id": "minecraft:copper_ingot"
+    }
+  ],
+  "result": {
+    "id": "dwarvencraft:bronze_mix",
+    "count": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S",
+    "X "
+  ],
+  "key": {
+    "S": {
+      "id": "minecraft:stick"
+    },
+    "X": {
+      "id": "minecraft:string"
+    }
+  },
+  "result": {
+    "id": "dwarvencraft:fire_starter",
+    "count": 1
+  }
+}
