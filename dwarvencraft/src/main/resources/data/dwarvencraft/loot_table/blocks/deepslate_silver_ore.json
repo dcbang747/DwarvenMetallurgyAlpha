@@ -16,10 +16,7 @@
                   "predicate": {
                     "predicates": {
                       "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {"min": 1}
-                        }
+                        {"enchantments": "minecraft:silk_touch", "levels": {"min": 1}}
                       ]
                     }
                   }
@@ -28,7 +25,21 @@
             },
             {
               "type": "minecraft:item",
-              "name": "dwarvencraft:raw_silver_bits"
+              "name": "dwarvencraft:raw_silver_bits",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:iron_pickaxe"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "dwarvencraft:raw_silver"
             }
           ]
         }
