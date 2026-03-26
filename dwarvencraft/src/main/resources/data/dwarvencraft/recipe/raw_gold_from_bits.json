@@ -1,15 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "BBB",
-    "BBB",
-    "BBB"
-  ],
-  "key": {
-    "B": "dwarvencraft:raw_gold_bits"
-  },
-  "result": {
-    "id": "minecraft:raw_gold",
-    "count": 1
-  }
+  "pattern": ["BBB", "BBB", "BBB"],
+  "key": {"B": "dwarvencraft:raw_gold_bits"},
+  "result": {"id": "minecraft:raw_gold", "count": 1}
 }

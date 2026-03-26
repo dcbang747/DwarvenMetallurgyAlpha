@@ -1,10 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " F ",
-    "LLL",
-    "BBB"
-  ],
+  "pattern": [" F ", "LLL", "BBB"],
   "key": {
     "F": "minecraft:flint",
     "L": "minecraft:leaf_litter",

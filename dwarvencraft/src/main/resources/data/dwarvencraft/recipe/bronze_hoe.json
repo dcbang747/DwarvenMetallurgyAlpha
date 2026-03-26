@@ -1,16 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "CC",
-    " S",
-    " S"
-  ],
-  "key": {
-    "C": "dwarvencraft:bronze_ingot",
-    "S": "minecraft:stick"
-  },
-  "result": {
-    "id": "dwarvencraft:bronze_hoe",
-    "count": 1
-  }
+  "pattern": ["CC", " S", " S"],
+  "key": {"C": "dwarvencraft:bronze_ingot", "S": "minecraft:stick"},
+  "result": {"id": "dwarvencraft:bronze_hoe", "count": 1}
 }

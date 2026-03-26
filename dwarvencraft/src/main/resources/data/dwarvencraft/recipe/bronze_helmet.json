@@ -1,14 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "CCC",
-    "C C"
-  ],
-  "key": {
-    "C": "dwarvencraft:bronze_ingot"
-  },
-  "result": {
-    "id": "dwarvencraft:bronze_helmet",
-    "count": 1
-  }
+  "pattern": ["CCC", "C C"],
+  "key": {"C": "dwarvencraft:bronze_ingot"},
+  "result": {"id": "dwarvencraft:bronze_helmet", "count": 1}
 }

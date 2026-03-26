@@ -1,12 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "id": "dwarvencraft:stick_bundle"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stick",
-    "count": 9
-  }
+  "ingredients": ["dwarvencraft:stick_bundle"],
+  "result": {"id": "minecraft:stick", "count": 9}
 }

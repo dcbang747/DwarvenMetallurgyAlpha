@@ -1,17 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "SSS",
-    "SSS",
-    "SSS"
-  ],
-  "key": {
-    "S": {
-      "id": "minecraft:stick"
-    }
-  },
-  "result": {
-    "id": "dwarvencraft:stick_bundle",
-    "count": 1
-  }
+  "pattern": ["SSS","SSS","SSS"],
+  "key": {"S": "minecraft:stick"},
+  "result": {"id": "dwarvencraft:stick_bundle", "count": 1}
 }

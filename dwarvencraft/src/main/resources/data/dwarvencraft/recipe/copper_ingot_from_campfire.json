@@ -1,9 +1,7 @@
 {
   "type": "minecraft:campfire_cooking",
   "ingredient": "minecraft:raw_copper",
-  "result": {
-    "id": "minecraft:copper_ingot"
-  },
+  "result": {"id": "minecraft:copper_ingot"},
   "experience": 0.7,
   "cookingtime": 600
 }

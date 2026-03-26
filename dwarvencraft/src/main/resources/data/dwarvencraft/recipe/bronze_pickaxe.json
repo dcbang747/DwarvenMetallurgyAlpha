@@ -1,16 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "CCC",
-    " S ",
-    " S "
-  ],
-  "key": {
-    "C": "dwarvencraft:bronze_ingot",
-    "S": "minecraft:stick"
-  },
-  "result": {
-    "id": "dwarvencraft:bronze_pickaxe",
-    "count": 1
-  }
+  "pattern": ["CCC", " S ", " S "],
+  "key": {"C": "dwarvencraft:bronze_ingot", "S": "minecraft:stick"},
+  "result": {"id": "dwarvencraft:bronze_pickaxe", "count": 1}
 }
