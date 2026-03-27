@@ -20,23 +20,23 @@ public class ModBlocks {
 
     public static final Block TIN_ORE = registerBlock("tin_ore",
             s -> new ExperienceDroppingBlock(UniformIntProvider.create(0, 2), s),
-            AbstractBlock.Settings.create()
-                    .strength(3.0F, 3.0F).requiresTool().sounds(BlockSoundGroup.STONE));
+            AbstractBlock.Settings.create().strength(3.0F, 3.0F).requiresTool().sounds(BlockSoundGroup.STONE));
 
     public static final Block DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
             s -> new ExperienceDroppingBlock(UniformIntProvider.create(0, 2), s),
-            AbstractBlock.Settings.create()
-                    .strength(4.5F, 3.0F).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
+            AbstractBlock.Settings.create().strength(4.5F, 3.0F).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
 
     public static final Block SILVER_ORE = registerBlock("silver_ore",
             s -> new ExperienceDroppingBlock(UniformIntProvider.create(0, 2), s),
-            AbstractBlock.Settings.create()
-                    .strength(3.0F, 3.0F).requiresTool().sounds(BlockSoundGroup.STONE));
+            AbstractBlock.Settings.create().strength(3.0F, 3.0F).requiresTool().sounds(BlockSoundGroup.STONE));
 
     public static final Block DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             s -> new ExperienceDroppingBlock(UniformIntProvider.create(0, 2), s),
-            AbstractBlock.Settings.create()
-                    .strength(4.5F, 3.0F).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
+            AbstractBlock.Settings.create().strength(4.5F, 3.0F).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
+
+    public static final Block ANCIENT_FURNACE = registerBlock("ancient_furnace",
+            AncientFurnaceBlock::new,
+            AbstractBlock.Settings.create().strength(5.0F, 6.0F).requiresTool().luminance(state -> state.get(net.minecraft.block.AbstractFurnaceBlock.LIT) ? 13 : 0));
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         Identifier id = Identifier.of(DwarvenCraft.MOD_ID, name);

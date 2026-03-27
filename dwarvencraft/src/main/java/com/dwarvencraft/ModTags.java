@@ -15,21 +15,15 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_GABIL_TOOL = of("incorrect_for_gabil_tool");
         public static final TagKey<Block> INCORRECT_FOR_DURINUL_TOOL = of("incorrect_for_durinul_tool");
         public static final TagKey<Block> INCORRECT_FOR_MITHRIL_TOOL = of("incorrect_for_mithril_tool");
-
-        private static TagKey<Block> of(String name) {
-            return TagKey.of(RegistryKeys.BLOCK, Identifier.of(DwarvenCraft.MOD_ID, name));
-        }
+        private static TagKey<Block> of(String name) { return TagKey.of(RegistryKeys.BLOCK, Identifier.of(DwarvenCraft.MOD_ID, name)); }
     }
-
     public static class Items {
         public static final TagKey<Item> BRONZE_REPAIR_MATERIALS = of("bronze_repair_materials");
         public static final TagKey<Item> STEEL_REPAIR_MATERIALS = of("steel_repair_materials");
         public static final TagKey<Item> SHANOR_REPAIR_MATERIALS = of("shanor_repair_materials");
         public static final TagKey<Item> KIDZUL_REPAIR_MATERIALS = of("kidzul_repair_materials");
         public static final TagKey<Item> GABIL_REPAIR_MATERIALS = of("gabil_repair_materials");
-
-        private static TagKey<Item> of(String name) {
-            return TagKey.of(RegistryKeys.ITEM, Identifier.of(DwarvenCraft.MOD_ID, name));
-        }
+        public static final TagKey<Item> DURINUL_REPAIR_MATERIALS = of("durinul_repair_materials");
+        private static TagKey<Item> of(String name) { return TagKey.of(RegistryKeys.ITEM, Identifier.of(DwarvenCraft.MOD_ID, name)); }
     }
 }

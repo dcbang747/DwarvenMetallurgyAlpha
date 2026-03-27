@@ -72,5 +72,19 @@
   "block.dwarvencraft.tin_ore": "Tin Ore",
   "block.dwarvencraft.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.dwarvencraft.silver_ore": "Silver Ore",
-  "block.dwarvencraft.deepslate_silver_ore": "Deepslate Silver Ore"
+  "block.dwarvencraft.deepslate_silver_ore": "Deepslate Silver Ore",
+  "item.dwarvencraft.durinul_mix": "Durinul Mix",
+  "item.dwarvencraft.durinul_ingot": "Durinul Ingot",
+  "item.dwarvencraft.durinul_sword": "Durinul Sword",
+  "item.dwarvencraft.durinul_pickaxe": "Durinul Pickaxe",
+  "item.dwarvencraft.durinul_axe": "Durinul Axe",
+  "item.dwarvencraft.durinul_shovel": "Durinul Shovel",
+  "item.dwarvencraft.durinul_hoe": "Durinul Hoe",
+  "item.dwarvencraft.durinul_spear": "Durinul Spear",
+  "item.dwarvencraft.durinul_helmet": "Durinul Helmet",
+  "item.dwarvencraft.durinul_chestplate": "Durinul Chestplate",
+  "item.dwarvencraft.durinul_leggings": "Durinul Leggings",
+  "item.dwarvencraft.durinul_boots": "Durinul Boots",
+  "block.dwarvencraft.ancient_furnace": "Ancient Furnace",
+  "container.dwarvencraft.ancient_furnace": "Ancient Furnace"
 }

@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","pattern":["AAA","ABA","GPG"],"key":{"A":"minecraft:ancient_debris","B":"minecraft:blast_furnace","G":"dwarvencraft:gabil_plate","P":"minecraft:netherite_upgrade_smithing_template"},"result":{"id":"dwarvencraft:ancient_furnace","count":1}}

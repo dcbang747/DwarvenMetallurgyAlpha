@@ -4,16 +4,24 @@
   "version": "${version}",
   "name": "Dwarven Craft",
   "description": "A complete metallurgy overhaul with dwarven-inspired progression from copper to mithril.",
-  "authors": ["DwarvenSmith"],
+  "authors": [
+    "DwarvenSmith"
+  ],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/dwarvencraft/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["com.dwarvencraft.DwarvenCraft"],
-    "client": ["com.dwarvencraft.DwarvenCraftClient"]
+    "main": [
+      "com.dwarvencraft.DwarvenCraft"
+    ],
+    "client": [
+      "com.dwarvencraft.DwarvenCraftClient"
+    ]
   },
-  "mixins": ["dwarvencraft.mixins.json"],
+  "mixins": [
+    "dwarvencraft.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.18.0",
     "minecraft": "~1.21.11",

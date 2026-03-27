@@ -93,6 +93,19 @@ public class ModItems {
     public static final Item GABIL_LEGGINGS = register("gabil_leggings", Item::new, new Item.Settings().armor(ModArmorMaterials.GABIL, EquipmentType.LEGGINGS).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.GABIL_BASE_DURABILITY)));
     public static final Item GABIL_BOOTS = register("gabil_boots", Item::new, new Item.Settings().armor(ModArmorMaterials.GABIL, EquipmentType.BOOTS).maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.GABIL_BASE_DURABILITY)));
 
+    // === DURINUL TOOLS & ARMOR ===
+    public static final Item DURINUL_MIX = register("durinul_mix", Item::new, new Item.Settings());
+    public static final Item DURINUL_INGOT = register("durinul_ingot", Item::new, new Item.Settings().fireproof());
+    public static final Item DURINUL_SWORD = register("durinul_sword", Item::new, new Item.Settings().fireproof().sword(ModToolMaterials.DURINUL, 3.0F, -2.4F));
+    public static final Item DURINUL_PICKAXE = register("durinul_pickaxe", Item::new, new Item.Settings().fireproof().pickaxe(ModToolMaterials.DURINUL, 1.0F, -2.8F));
+    public static final Item DURINUL_AXE = register("durinul_axe", Item::new, new Item.Settings().fireproof().axe(ModToolMaterials.DURINUL, 5.0F, -3.0F));
+    public static final Item DURINUL_SHOVEL = register("durinul_shovel", Item::new, new Item.Settings().fireproof().shovel(ModToolMaterials.DURINUL, 1.5F, -3.0F));
+    public static final Item DURINUL_HOE = register("durinul_hoe", Item::new, new Item.Settings().fireproof().hoe(ModToolMaterials.DURINUL, -4.0F, 0.0F));
+    public static final Item DURINUL_SPEAR = register("durinul_spear", Item::new, new Item.Settings().fireproof().spear(ModToolMaterials.DURINUL, 5.0F, -4.1F, 1.2F, 1.2F, 1.2F, 0.3F, 2.0F, 1.0F, 1.0F));
+    public static final Item DURINUL_HELMET = register("durinul_helmet", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.DURINUL, EquipmentType.HELMET).maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.DURINUL_BASE_DURABILITY)));
+    public static final Item DURINUL_CHESTPLATE = register("durinul_chestplate", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.DURINUL, EquipmentType.CHESTPLATE).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.DURINUL_BASE_DURABILITY)));
+    public static final Item DURINUL_LEGGINGS = register("durinul_leggings", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.DURINUL, EquipmentType.LEGGINGS).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.DURINUL_BASE_DURABILITY)));
+    public static final Item DURINUL_BOOTS = register("durinul_boots", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.DURINUL, EquipmentType.BOOTS).maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.DURINUL_BASE_DURABILITY)));
     // === REGISTRATION ===
     public static Item register(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DwarvenCraft.MOD_ID, name));

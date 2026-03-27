@@ -1,0 +1,12 @@
+package com.dwarvencraft;
+
+import com.dwarvencraft.screen.ModScreenHandlers;
+import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
+
+public class DwarvenCraftClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+        HandledScreens.register(ModScreenHandlers.ANCIENT_FURNACE_SCREEN_HANDLER, AncientFurnaceScreen::new);
+    }
+}

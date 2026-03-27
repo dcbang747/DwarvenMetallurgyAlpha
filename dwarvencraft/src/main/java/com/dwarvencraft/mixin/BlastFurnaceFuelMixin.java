@@ -1,5 +1,6 @@
 package com.dwarvencraft.mixin;
 
+import com.dwarvencraft.block.entity.AncientFurnaceBlockEntity;
 import com.dwarvencraft.item.ModItems;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.block.entity.BlastFurnaceBlockEntity;
@@ -14,10 +15,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class BlastFurnaceFuelMixin {
 
     @Inject(method = "getFuelTime", at = @At("HEAD"), cancellable = true)
-    private void dwarvencraft$restrictBlastFurnaceFuel(FuelRegistry fuelRegistry, ItemStack stack, CallbackInfoReturnable<Integer> cir) {
-        // Only restrict blast furnaces, not regular furnaces or smokers
-        if ((Object) this instanceof BlastFurnaceBlockEntity) {
-            // Only coke is allowed as fuel in blast furnaces
+    private void dwarvencraft$restrictFurnaceFuel(FuelRegistry fuelRegistry, ItemStack stack, CallbackInfoReturnable<Integer> cir) {
+        // Blast furnace and ancient furnace: coke only
+        if ((Object) this instanceof BlastFurnaceBlockEntity || (Object) this instanceof AncientFurnaceBlockEntity) {
             if (!stack.isOf(ModItems.COKE)) {
                 cir.setReturnValue(0);
             }

@@ -61,6 +61,13 @@ public class ModItemGroups {
                         e.add(ModItems.GABIL_SHOVEL); e.add(ModItems.GABIL_HOE); e.add(ModItems.GABIL_SPEAR);
                         e.add(ModItems.GABIL_HELMET); e.add(ModItems.GABIL_CHESTPLATE);
                         e.add(ModItems.GABIL_LEGGINGS); e.add(ModItems.GABIL_BOOTS);
+                        // Durinul
+                        e.add(ModItems.DURINUL_MIX); e.add(ModItems.DURINUL_INGOT);
+                        e.add(ModBlocks.ANCIENT_FURNACE);
+                        e.add(ModItems.DURINUL_SWORD); e.add(ModItems.DURINUL_PICKAXE); e.add(ModItems.DURINUL_AXE);
+                        e.add(ModItems.DURINUL_SHOVEL); e.add(ModItems.DURINUL_HOE); e.add(ModItems.DURINUL_SPEAR);
+                        e.add(ModItems.DURINUL_HELMET); e.add(ModItems.DURINUL_CHESTPLATE);
+                        e.add(ModItems.DURINUL_LEGGINGS); e.add(ModItems.DURINUL_BOOTS);
                     }).build()
     );
 
