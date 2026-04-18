@@ -1,7 +1,1 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": "dwarvencraft:raw_silver",
-  "result": {"id": "dwarvencraft:silver_ingot"},
-  "experience": 1.0,
-  "cookingtime": 100
-}
+{"type": "minecraft:blasting", "ingredient": "dwarvencraft:raw_silver", "result": {"id": "dwarvencraft:silver_ingot"}, "experience": 1.0, "cookingtime": 100, "category": "misc"}

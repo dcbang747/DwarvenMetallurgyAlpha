@@ -43,7 +43,7 @@ public class ModBlocks {
         RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, id);
         Block block = Blocks.register(blockKey, factory, settings);
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, id);
-        Items.register(itemKey, s -> new BlockItem(block, s), new Item.Settings());
+        Items.register(itemKey, s -> new BlockItem(block, s), new Item.Settings().useBlockPrefixedTranslationKey());
         return block;
     }
 

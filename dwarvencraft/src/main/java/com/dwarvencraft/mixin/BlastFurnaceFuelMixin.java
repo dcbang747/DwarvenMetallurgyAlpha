@@ -16,7 +16,6 @@ public class BlastFurnaceFuelMixin {
 
     @Inject(method = "getFuelTime", at = @At("HEAD"), cancellable = true)
     private void dwarvencraft$restrictFurnaceFuel(FuelRegistry fuelRegistry, ItemStack stack, CallbackInfoReturnable<Integer> cir) {
-        // Blast furnace and ancient furnace: coke only
         if ((Object) this instanceof BlastFurnaceBlockEntity || (Object) this instanceof AncientFurnaceBlockEntity) {
             if (!stack.isOf(ModItems.COKE)) {
                 cir.setReturnValue(0);

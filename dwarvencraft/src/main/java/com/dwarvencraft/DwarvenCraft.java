@@ -4,6 +4,7 @@ import com.dwarvencraft.block.ModBlocks;
 import com.dwarvencraft.block.entity.ModBlockEntities;
 import com.dwarvencraft.item.ModItemGroups;
 import com.dwarvencraft.item.ModItems;
+import com.dwarvencraft.recipe.ModRecipes;
 import com.dwarvencraft.screen.ModScreenHandlers;
 import com.dwarvencraft.world.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -17,6 +18,7 @@ public class DwarvenCraft implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModRecipes.initialize();
         ModBlocks.initialize();
         ModItems.initialize();
         ModItemGroups.initialize();
