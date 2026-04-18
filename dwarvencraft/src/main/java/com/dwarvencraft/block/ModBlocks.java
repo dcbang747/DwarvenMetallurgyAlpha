@@ -38,6 +38,14 @@ public class ModBlocks {
             AncientFurnaceBlock::new,
             AbstractBlock.Settings.create().strength(5.0F, 6.0F).requiresTool().luminance(state -> state.get(net.minecraft.block.AbstractFurnaceBlock.LIT) ? 13 : 0));
 
+    public static final Block MITHRIL_ORE = registerBlock("mithril_ore",
+            s -> new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), s),
+            AbstractBlock.Settings.create().strength(50.0F, 1200.0F).requiresTool().sounds(BlockSoundGroup.NETHERITE));
+
+    public static final Block DURINUL_FURNACE = registerBlock("durinul_furnace",
+            DurinulFurnaceBlock::new,
+            AbstractBlock.Settings.create().strength(50.0F, 1200.0F).requiresTool().luminance(state -> state.get(net.minecraft.block.AbstractFurnaceBlock.LIT) ? 15 : 0));
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         Identifier id = Identifier.of(DwarvenCraft.MOD_ID, name);
         RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, id);

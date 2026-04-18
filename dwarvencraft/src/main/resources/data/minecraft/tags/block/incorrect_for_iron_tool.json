@@ -4,6 +4,7 @@
     "minecraft:diamond_ore",
     "minecraft:deepslate_diamond_ore",
     "minecraft:diamond_block",
-    "minecraft:obsidian"
+    "minecraft:obsidian",
+    "dwarvencraft:mithril_ore"
   ]
 }

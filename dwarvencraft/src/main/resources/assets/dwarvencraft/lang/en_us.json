@@ -86,5 +86,20 @@
   "item.dwarvencraft.durinul_leggings": "Durinul Leggings",
   "item.dwarvencraft.durinul_boots": "Durinul Boots",
   "block.dwarvencraft.ancient_furnace": "Ancient Furnace",
-  "container.dwarvencraft.ancient_furnace": "Ancient Furnace"
+  "container.dwarvencraft.ancient_furnace": "Ancient Furnace",
+  "block.dwarvencraft.durinul_furnace": "Durinul Furnace",
+  "container.dwarvencraft.durinul_furnace": "Durinul Furnace",
+  "block.dwarvencraft.mithril_ore": "Mithril Ore",
+  "item.dwarvencraft.raw_mithril": "Raw Mithril",
+  "item.dwarvencraft.mithril_ingot": "Mithril Ingot",
+  "item.dwarvencraft.mithril_sword": "Mithril Sword",
+  "item.dwarvencraft.mithril_pickaxe": "Mithril Pickaxe",
+  "item.dwarvencraft.mithril_axe": "Mithril Axe",
+  "item.dwarvencraft.mithril_shovel": "Mithril Shovel",
+  "item.dwarvencraft.mithril_hoe": "Mithril Hoe",
+  "item.dwarvencraft.mithril_spear": "Mithril Spear",
+  "item.dwarvencraft.mithril_helmet": "Mithril Helmet",
+  "item.dwarvencraft.mithril_chestplate": "Mithril Chestplate",
+  "item.dwarvencraft.mithril_leggings": "Mithril Leggings",
+  "item.dwarvencraft.mithril_boots": "Mithril Boots"
 }

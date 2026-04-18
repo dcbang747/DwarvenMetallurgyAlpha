@@ -10,6 +10,7 @@
     "minecraft:deepslate_diamond_ore",
     "minecraft:diamond_block",
     "minecraft:obsidian",
-    "minecraft:ancient_debris"
+    "minecraft:ancient_debris",
+    "dwarvencraft:mithril_ore"
   ]
 }

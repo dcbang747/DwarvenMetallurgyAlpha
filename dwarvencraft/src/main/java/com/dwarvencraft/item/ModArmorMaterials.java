@@ -53,4 +53,11 @@ public class ModArmorMaterials {
     public static final ArmorMaterial DURINUL = new ArmorMaterial(DURINUL_BASE_DURABILITY,
             Map.of(EquipmentType.HELMET, 3, EquipmentType.CHESTPLATE, 8, EquipmentType.LEGGINGS, 6, EquipmentType.BOOTS, 3),
             15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, ModTags.Items.DURINUL_REPAIR_MATERIALS, DURINUL_EQUIPMENT_KEY);
+
+    // Mithril: best in game. 2x netherite durability (base 74), full netherite armor values, 2x toughness (6), huge enchantability (50)
+    public static final int MITHRIL_BASE_DURABILITY = 74;
+    public static final RegistryKey<EquipmentAsset> MITHRIL_EQUIPMENT_KEY = key("mithril");
+    public static final ArmorMaterial MITHRIL = new ArmorMaterial(MITHRIL_BASE_DURABILITY,
+            Map.of(EquipmentType.HELMET, 3, EquipmentType.CHESTPLATE, 8, EquipmentType.LEGGINGS, 6, EquipmentType.BOOTS, 3),
+            50, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 6.0F, 0.15F, ModTags.Items.MITHRIL_REPAIR_MATERIALS, MITHRIL_EQUIPMENT_KEY);
 }

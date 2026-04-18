@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
@@ -15,6 +16,8 @@ public class ModWorldGeneration {
             RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(DwarvenCraft.MOD_ID, "tin_ore"));
     public static final RegistryKey<PlacedFeature> SILVER_ORE_PLACED_KEY =
             RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(DwarvenCraft.MOD_ID, "silver_ore"));
+    public static final RegistryKey<PlacedFeature> MITHRIL_ORE_PLACED_KEY =
+            RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(DwarvenCraft.MOD_ID, "mithril_ore"));
 
     public static void initialize() {
         BiomeModifications.addFeature(
@@ -26,6 +29,17 @@ public class ModWorldGeneration {
                 BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES,
                 SILVER_ORE_PLACED_KEY
+        );
+        // Mithril: outer end islands only (exclude center THE_END biome)
+        BiomeModifications.addFeature(
+                BiomeSelectors.includeByKey(
+                        BiomeKeys.END_HIGHLANDS,
+                        BiomeKeys.END_MIDLANDS,
+                        BiomeKeys.END_BARRENS,
+                        BiomeKeys.SMALL_END_ISLANDS
+                ),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                MITHRIL_ORE_PLACED_KEY
         );
     }
 }

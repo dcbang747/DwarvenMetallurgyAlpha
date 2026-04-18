@@ -24,6 +24,20 @@ public class ModRecipes {
             RecipeSerializer.register("dwarvencraft:ancient_smelting",
                     new AbstractCookingRecipe.Serializer<>(AncientSmeltingRecipe::new, 100));
 
+    public static final RecipeType<DurinulSmeltingRecipe> DURINUL_SMELTING =
+            Registry.register(Registries.RECIPE_TYPE,
+                    Identifier.of(DwarvenCraft.MOD_ID, "durinul_smelting"),
+                    new RecipeType<DurinulSmeltingRecipe>() {
+                        @Override
+                        public String toString() {
+                            return "dwarvencraft:durinul_smelting";
+                        }
+                    });
+
+    public static final RecipeSerializer<DurinulSmeltingRecipe> DURINUL_SMELTING_SERIALIZER =
+            RecipeSerializer.register("dwarvencraft:durinul_smelting",
+                    new AbstractCookingRecipe.Serializer<>(DurinulSmeltingRecipe::new, 100));
+
     public static void initialize() {
     }
 }

@@ -106,6 +106,21 @@ public class ModItems {
     public static final Item DURINUL_CHESTPLATE = register("durinul_chestplate", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.DURINUL, EquipmentType.CHESTPLATE).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.DURINUL_BASE_DURABILITY)));
     public static final Item DURINUL_LEGGINGS = register("durinul_leggings", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.DURINUL, EquipmentType.LEGGINGS).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.DURINUL_BASE_DURABILITY)));
     public static final Item DURINUL_BOOTS = register("durinul_boots", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.DURINUL, EquipmentType.BOOTS).maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.DURINUL_BASE_DURABILITY)));
+
+    // === MITHRIL TOOLS & ARMOR ===
+    public static final Item RAW_MITHRIL = register("raw_mithril", Item::new, new Item.Settings());
+    public static final Item MITHRIL_INGOT = register("mithril_ingot", Item::new, new Item.Settings().fireproof());
+    public static final Item MITHRIL_SWORD = register("mithril_sword", Item::new, new Item.Settings().fireproof().sword(ModToolMaterials.MITHRIL, 3.0F, -2.4F));
+    public static final Item MITHRIL_PICKAXE = register("mithril_pickaxe", Item::new, new Item.Settings().fireproof().pickaxe(ModToolMaterials.MITHRIL, 1.0F, -2.8F));
+    public static final Item MITHRIL_AXE = register("mithril_axe", Item::new, new Item.Settings().fireproof().axe(ModToolMaterials.MITHRIL, 5.0F, -3.0F));
+    public static final Item MITHRIL_SHOVEL = register("mithril_shovel", Item::new, new Item.Settings().fireproof().shovel(ModToolMaterials.MITHRIL, 1.5F, -3.0F));
+    public static final Item MITHRIL_HOE = register("mithril_hoe", Item::new, new Item.Settings().fireproof().hoe(ModToolMaterials.MITHRIL, -4.0F, 0.0F));
+    public static final Item MITHRIL_SPEAR = register("mithril_spear", Item::new, new Item.Settings().fireproof().spear(ModToolMaterials.MITHRIL, 5.5F, -4.1F, 1.3F, 1.3F, 1.3F, 0.25F, 1.8F, 0.8F, 0.8F));
+    public static final Item MITHRIL_HELMET = register("mithril_helmet", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.MITHRIL, EquipmentType.HELMET).maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.MITHRIL_BASE_DURABILITY)));
+    public static final Item MITHRIL_CHESTPLATE = register("mithril_chestplate", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.MITHRIL, EquipmentType.CHESTPLATE).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.MITHRIL_BASE_DURABILITY)));
+    public static final Item MITHRIL_LEGGINGS = register("mithril_leggings", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.MITHRIL, EquipmentType.LEGGINGS).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.MITHRIL_BASE_DURABILITY)));
+    public static final Item MITHRIL_BOOTS = register("mithril_boots", Item::new, new Item.Settings().fireproof().armor(ModArmorMaterials.MITHRIL, EquipmentType.BOOTS).maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.MITHRIL_BASE_DURABILITY)));
+
     // === REGISTRATION ===
     public static Item register(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DwarvenCraft.MOD_ID, name));

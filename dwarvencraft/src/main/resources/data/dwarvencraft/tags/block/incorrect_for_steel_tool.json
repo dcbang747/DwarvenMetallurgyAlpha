@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:incorrect_for_iron_tool"
+    "#minecraft:incorrect_for_iron_tool",
+    "dwarvencraft:mithril_ore"
   ]
 }

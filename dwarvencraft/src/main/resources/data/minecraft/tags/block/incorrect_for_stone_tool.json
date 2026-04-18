@@ -14,6 +14,7 @@
     "minecraft:emerald_ore",
     "minecraft:deepslate_emerald_ore",
     "dwarvencraft:silver_ore",
-    "dwarvencraft:deepslate_silver_ore"
+    "dwarvencraft:deepslate_silver_ore",
+    "dwarvencraft:mithril_ore"
   ]
 }

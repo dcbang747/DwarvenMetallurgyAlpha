@@ -8,5 +8,6 @@ public class DwarvenCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         HandledScreens.register(ModScreenHandlers.ANCIENT_FURNACE_SCREEN_HANDLER, AncientFurnaceScreen::new);
+        HandledScreens.register(ModScreenHandlers.DURINUL_FURNACE_SCREEN_HANDLER, DurinulFurnaceScreen::new);
     }
 }

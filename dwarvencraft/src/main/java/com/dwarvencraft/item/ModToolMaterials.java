@@ -22,4 +22,8 @@ public class ModToolMaterials {
     // Durinul: equivalent to netherite (2031 durability, 9.0 speed, 4.0 attack)
     public static final ToolMaterial DURINUL = new ToolMaterial(
             ModTags.Blocks.INCORRECT_FOR_DURINUL_TOOL, 2031, 9.0F, 4.0F, 15, ModTags.Items.DURINUL_REPAIR_MATERIALS);
+
+    // Mithril: twice durability of netherite (4062), 25% faster (11.25), same attack bonus, double enchantability of gold (44)
+    public static final ToolMaterial MITHRIL = new ToolMaterial(
+            ModTags.Blocks.INCORRECT_FOR_MITHRIL_TOOL, 4062, 11.25F, 4.0F, 44, ModTags.Items.MITHRIL_REPAIR_MATERIALS);
 }

@@ -2,6 +2,7 @@ package com.dwarvencraft;
 
 import com.dwarvencraft.block.ModBlocks;
 import com.dwarvencraft.block.entity.ModBlockEntities;
+import com.dwarvencraft.effect.MithrilArmorEffect;
 import com.dwarvencraft.item.ModItemGroups;
 import com.dwarvencraft.item.ModItems;
 import com.dwarvencraft.recipe.ModRecipes;
@@ -29,6 +30,8 @@ public class DwarvenCraft implements ModInitializer {
         FuelRegistryEvents.BUILD.register((builder, context) -> {
             builder.add(ModItems.COKE, 1600);
         });
+
+        MithrilArmorEffect.register();
 
         LOGGER.info("Dwarven Craft initialized - The forges are lit!");
     }
