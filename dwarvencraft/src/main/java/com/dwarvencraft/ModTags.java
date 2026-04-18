@@ -24,6 +24,7 @@ public class ModTags {
         public static final TagKey<Item> KIDZUL_REPAIR_MATERIALS = of("kidzul_repair_materials");
         public static final TagKey<Item> GABIL_REPAIR_MATERIALS = of("gabil_repair_materials");
         public static final TagKey<Item> DURINUL_REPAIR_MATERIALS = of("durinul_repair_materials");
+        public static final TagKey<Item> MITHRIL_REPAIR_MATERIALS = of("mithril_repair_materials");
         private static TagKey<Item> of(String name) { return TagKey.of(RegistryKeys.ITEM, Identifier.of(DwarvenCraft.MOD_ID, name)); }
     }
 }

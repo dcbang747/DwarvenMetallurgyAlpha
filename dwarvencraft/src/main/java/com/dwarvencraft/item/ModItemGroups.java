@@ -68,6 +68,14 @@ public class ModItemGroups {
                         e.add(ModItems.DURINUL_SHOVEL); e.add(ModItems.DURINUL_HOE); e.add(ModItems.DURINUL_SPEAR);
                         e.add(ModItems.DURINUL_HELMET); e.add(ModItems.DURINUL_CHESTPLATE);
                         e.add(ModItems.DURINUL_LEGGINGS); e.add(ModItems.DURINUL_BOOTS);
+                        // Mithril
+                        e.add(ModBlocks.DURINUL_FURNACE);
+                        e.add(ModBlocks.MITHRIL_ORE);
+                        e.add(ModItems.RAW_MITHRIL); e.add(ModItems.MITHRIL_INGOT);
+                        e.add(ModItems.MITHRIL_SWORD); e.add(ModItems.MITHRIL_PICKAXE); e.add(ModItems.MITHRIL_AXE);
+                        e.add(ModItems.MITHRIL_SHOVEL); e.add(ModItems.MITHRIL_HOE); e.add(ModItems.MITHRIL_SPEAR);
+                        e.add(ModItems.MITHRIL_HELMET); e.add(ModItems.MITHRIL_CHESTPLATE);
+                        e.add(ModItems.MITHRIL_LEGGINGS); e.add(ModItems.MITHRIL_BOOTS);
                     }).build()
     );
 

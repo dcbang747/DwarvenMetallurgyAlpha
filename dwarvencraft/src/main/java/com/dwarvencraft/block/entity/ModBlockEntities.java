@@ -17,6 +17,13 @@ public class ModBlockEntities {
                     FabricBlockEntityTypeBuilder.create(AncientFurnaceBlockEntity::new, ModBlocks.ANCIENT_FURNACE).build()
             );
 
+    public static final BlockEntityType<DurinulFurnaceBlockEntity> DURINUL_FURNACE =
+            Registry.register(
+                    Registries.BLOCK_ENTITY_TYPE,
+                    Identifier.of(DwarvenCraft.MOD_ID, "durinul_furnace"),
+                    FabricBlockEntityTypeBuilder.create(DurinulFurnaceBlockEntity::new, ModBlocks.DURINUL_FURNACE).build()
+            );
+
     public static void initialize() {
     }
 }
