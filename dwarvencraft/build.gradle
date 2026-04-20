@@ -12,8 +12,8 @@ base {
 
 repositories {
     maven {
-        name = 'BlameJared'
-        url = 'https://maven.blamejared.com'
+        name = 'GeckoLibCloudsmith'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
     }
 }
 
