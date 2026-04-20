@@ -3,7 +3,7 @@ package com.dwarvencraft.item;
 import net.minecraft.item.Item;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class BronzeArmorItem extends Item implements GeoItem {
@@ -11,6 +11,7 @@ public class BronzeArmorItem extends Item implements GeoItem {
 
     public BronzeArmorItem(Settings settings) {
         super(settings);
+        GeoItem.registerSyncedAnimatable(this);
     }
 
     @Override
