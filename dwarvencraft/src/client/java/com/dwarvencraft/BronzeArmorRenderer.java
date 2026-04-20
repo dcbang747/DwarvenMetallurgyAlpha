@@ -1,38 +1,45 @@
 package com.dwarvencraft;
 
 import com.dwarvencraft.item.BronzeArmorItem;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib.animatable.GeoAnimatable;
+import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
+import software.bernie.geckolib.renderer.base.GeoRenderState;
 
-public class BronzeArmorRenderer extends GeoArmorRenderer<BronzeArmorItem> {
-    public BronzeArmorRenderer(String piece) {
-        super(new BronzeArmorModel(piece));
+@SuppressWarnings({"rawtypes", "unchecked"})
+public class BronzeArmorRenderer extends GeoArmorRenderer {
+    public BronzeArmorRenderer() {
+        super(new BronzeArmorModel());
     }
 
     private static class BronzeArmorModel extends GeoModel<BronzeArmorItem> {
-        private final Identifier modelPath;
-        private final Identifier texturePath;
-
-        BronzeArmorModel(String piece) {
-            this.modelPath = Identifier.of(DwarvenCraft.MOD_ID, "geo/bronze_" + piece + ".geo.json");
-            this.texturePath = Identifier.of(DwarvenCraft.MOD_ID, "textures/item/armor/bronze_" + piece + ".png");
+        @Override
+        public Identifier getModelResource(GeoRenderState renderState) {
+            return Identifier.of(DwarvenCraft.MOD_ID, "geo/bronze_" + pieceName(renderState) + ".geo.json");
         }
 
         @Override
-        public Identifier getModelResource(BronzeArmorItem animatable) {
-            return modelPath;
-        }
-
-        @Override
-        public Identifier getTextureResource(BronzeArmorItem animatable) {
-            return texturePath;
+        public Identifier getTextureResource(GeoRenderState renderState) {
+            return Identifier.of(DwarvenCraft.MOD_ID, "textures/item/armor/bronze_" + pieceName(renderState) + ".png");
         }
 
         @Override
         public Identifier getAnimationResource(BronzeArmorItem animatable) {
             return Identifier.of(DwarvenCraft.MOD_ID, "animations/empty.animation.json");
+        }
+
+        private static String pieceName(GeoRenderState renderState) {
+            EquipmentSlot slot = renderState.getGeckolibData(DataTickets.EQUIPMENT_SLOT);
+            if (slot == null) return "helmet";
+            return switch (slot) {
+                case HEAD -> "helmet";
+                case CHEST -> "chestplate";
+                case LEGS -> "leggings";
+                case FEET -> "boots";
+                default -> "helmet";
+            };
         }
     }
 }
