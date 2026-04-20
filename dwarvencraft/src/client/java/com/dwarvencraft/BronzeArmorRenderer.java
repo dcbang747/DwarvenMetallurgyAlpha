@@ -17,7 +17,7 @@ public class BronzeArmorRenderer extends GeoArmorRenderer {
     private static class BronzeArmorModel extends GeoModel<BronzeArmorItem> {
         @Override
         public Identifier getModelResource(GeoRenderState renderState) {
-            return Identifier.of(DwarvenCraft.MOD_ID, "geo/bronze_" + pieceName(renderState) + ".geo.json");
+            return Identifier.of(DwarvenCraft.MOD_ID, "bronze_" + pieceName(renderState));
         }
 
         @Override
@@ -27,7 +27,7 @@ public class BronzeArmorRenderer extends GeoArmorRenderer {
 
         @Override
         public Identifier getAnimationResource(BronzeArmorItem animatable) {
-            return Identifier.of(DwarvenCraft.MOD_ID, "animations/empty.animation.json");
+            return Identifier.of(DwarvenCraft.MOD_ID, "empty");
         }
 
         private static String pieceName(GeoRenderState renderState) {
