@@ -40,10 +40,10 @@ public class ModItems {
     public static final Item BRONZE_SHOVEL = register("bronze_shovel", Item::new, new Item.Settings().shovel(ModToolMaterials.BRONZE, 1.5F, -3.0F));
     public static final Item BRONZE_HOE = register("bronze_hoe", Item::new, new Item.Settings().hoe(ModToolMaterials.BRONZE, -1.0F, -2.0F));
     public static final Item BRONZE_SPEAR = register("bronze_spear", Item::new, new Item.Settings().spear(ModToolMaterials.BRONZE, 3.0F, -3.5F, 0.8F, 0.8F, 0.8F, 0.5F, 3.0F, 2.0F, 2.0F));
-    public static final Item BRONZE_HELMET = register("bronze_helmet", Item::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.HELMET).maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
-    public static final Item BRONZE_CHESTPLATE = register("bronze_chestplate", Item::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.CHESTPLATE).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
-    public static final Item BRONZE_LEGGINGS = register("bronze_leggings", Item::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.LEGGINGS).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
-    public static final Item BRONZE_BOOTS = register("bronze_boots", Item::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.BOOTS).maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
+    public static final Item BRONZE_HELMET = register("bronze_helmet", BronzeArmorItem::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.HELMET).maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
+    public static final Item BRONZE_CHESTPLATE = register("bronze_chestplate", BronzeArmorItem::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.CHESTPLATE).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
+    public static final Item BRONZE_LEGGINGS = register("bronze_leggings", BronzeArmorItem::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.LEGGINGS).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
+    public static final Item BRONZE_BOOTS = register("bronze_boots", BronzeArmorItem::new, new Item.Settings().armor(ModArmorMaterials.BRONZE, EquipmentType.BOOTS).maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.BRONZE_BASE_DURABILITY)));
 
     // === STEEL TOOLS & ARMOR ===
     public static final Item STEEL_SWORD = register("steel_sword", Item::new, new Item.Settings().sword(ModToolMaterials.STEEL, 3.0F, -2.4F));
