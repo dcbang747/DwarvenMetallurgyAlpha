@@ -12,6 +12,13 @@ import software.bernie.geckolib.renderer.base.GeoRenderState;
 public class BronzeArmorRenderer extends GeoArmorRenderer {
     public BronzeArmorRenderer() {
         super(new BronzeArmorModel());
+
+        this.headBone = "armorHead";
+        this.bodyBone = "armorBody";
+        this.rightArmBone = "armorRightArm";
+        this.leftArmBone = "armorLeftArm";
+        this.rightLegBone = "armorRightLeg";
+        this.leftLegBone = "armorLeftLeg";
     }
 
     private static class BronzeArmorModel extends GeoModel<BronzeArmorItem> {
