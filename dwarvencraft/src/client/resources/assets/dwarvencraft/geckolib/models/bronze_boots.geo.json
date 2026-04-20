@@ -24,7 +24,7 @@
           ]
         },
         {
-          "name": "armorLeftBoot",
+          "name": "armorLeftLeg",
           "pivot": [
             -2,
             3,
@@ -193,7 +193,7 @@
           ]
         },
         {
-          "name": "armorRightBoot",
+          "name": "armorRightLeg",
           "pivot": [
             2,
             3,
