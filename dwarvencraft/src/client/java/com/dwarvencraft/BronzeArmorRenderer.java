@@ -12,6 +12,7 @@ import software.bernie.geckolib.renderer.base.GeoRenderState;
 public class BronzeArmorRenderer extends GeoArmorRenderer {
     public BronzeArmorRenderer() {
         super(new BronzeArmorModel());
+
     }
 
     private static class BronzeArmorModel extends GeoModel<BronzeArmorItem> {
