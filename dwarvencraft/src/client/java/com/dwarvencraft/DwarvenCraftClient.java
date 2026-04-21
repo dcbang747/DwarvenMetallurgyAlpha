@@ -12,5 +12,6 @@ public class DwarvenCraftClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.DURINUL_FURNACE_SCREEN_HANDLER, DurinulFurnaceScreen::new);
 
         BronzeArmorItem.RENDERER_FACTORY = BronzeArmorRenderer::new;
+        ClientModelDebugReloadListener.register();
     }
 }
