@@ -11,12 +11,12 @@ import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.function.Consumer;
-import java.util.function.Supplier;
+import java.util.function.Function;
 
 public class BronzeArmorItem extends Item implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
-    public static Supplier<?> RENDERER_FACTORY = null;
+    public static Function<EquipmentSlot, GeoArmorRenderer<?, ?>> RENDERER_FACTORY = null;
 
     public BronzeArmorItem(Settings settings) {
         super(settings);
@@ -32,7 +32,7 @@ public class BronzeArmorItem extends Item implements GeoItem {
             @SuppressWarnings({"rawtypes", "unchecked"})
             public GeoArmorRenderer<?, ?> getGeoArmorRenderer(ItemStack itemStack, EquipmentSlot equipmentSlot) {
                 if (renderer == null && RENDERER_FACTORY != null)
-                    renderer = (GeoArmorRenderer<?, ?>) RENDERER_FACTORY.get();
+                    renderer = RENDERER_FACTORY.apply(equipmentSlot);
                 return renderer;
             }
         });

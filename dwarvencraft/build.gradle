@@ -48,6 +48,40 @@ tasks.withType(JavaCompile).configureEach {
     it.options.release = 21
 }
 
+def geckoModelPairs = [
+        [source: rootProject.file("boots.bbmodel"),      exported: file("src/client/resources/assets/dwarvencraft/geckolib/models/bronze_boots.geo.json")],
+        [source: rootProject.file("leggings.bbmodel"),   exported: file("src/client/resources/assets/dwarvencraft/geckolib/models/bronze_leggings.geo.json")],
+        [source: rootProject.file("chestplate.bbmodel"), exported: file("src/client/resources/assets/dwarvencraft/geckolib/models/bronze_chestplate.geo.json")],
+        [source: rootProject.file("helmet.bbmodel"),     exported: file("src/client/resources/assets/dwarvencraft/geckolib/models/bronze_helmet.geo.json")]
+]
+
+tasks.register("verifyGeckoModelExports") {
+    group = "verification"
+    description = "Fails if a Blockbench .bbmodel source is newer than its exported GeckoLib .geo.json."
+
+    doLast {
+        def stalePairs = geckoModelPairs.findAll { pair ->
+            pair.source.exists() && pair.exported.exists() && pair.source.lastModified() > pair.exported.lastModified()
+        }
+
+        if (!stalePairs.isEmpty()) {
+            def details = stalePairs.collect { pair ->
+                " - ${rootProject.relativePath(pair.source)} is newer than ${project.relativePath(pair.exported)}"
+            }.join("\n")
+
+            throw new GradleException(
+                    "Detected stale GeckoLib model exports.\n" +
+                    "Re-export the listed .bbmodel files from Blockbench before building:\n${details}\n" +
+                    "Note: Minecraft/Gradle does not read .bbmodel files at runtime."
+            )
+        }
+    }
+}
+
+tasks.named("processResources") {
+    dependsOn(tasks.named("verifyGeckoModelExports"))
+}
+
 java {
     withSourcesJar()
     sourceCompatibility = JavaVersion.VERSION_21

@@ -59,3 +59,14 @@ also disable the crafting recipies for netherite armor
 and disable the crafting recipies for diamond armor
 also the ]Durinul furnace will be uncraftable, rather I will place it manually
 for the recipe book just ignore it, after some serious consultation modding the recipe book is, in fact, a fools errand.
+
+## GeckoLib armor model editing note
+
+For the bronze armor pieces, the `.bbmodel` files in the repository root are Blockbench source files only.  
+Minecraft/Gradle does **not** load `.bbmodel` at runtime; the game only reads exported GeckoLib `.geo.json` files.
+If you only edit `dwarvencraft/src/client/resources/assets/dwarvencraft/geckolib/models/*.geo.json`, those edits can be lost the next time models are re-exported from Blockbench.
+
+To keep changes permanent:
+1. Edit the relevant `*.bbmodel` file (`helmet.bbmodel`, `chestplate.bbmodel`, `leggings.bbmodel`, `boots.bbmodel`).
+2. Re-export the GeckoLib model JSON.
+3. Commit both source (`.bbmodel`) and exported (`.geo.json`) changes together.
