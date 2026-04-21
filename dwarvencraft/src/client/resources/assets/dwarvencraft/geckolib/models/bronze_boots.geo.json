@@ -18,7 +18,7 @@
         {
           "name": "armorBody",
           "pivot": [
-            -2,
+            0,
             0,
             0
           ]
@@ -27,7 +27,7 @@
           "name": "armorLeftBoot",
           "pivot": [
             -2,
-            3,
+            12,
             0
           ],
           "parent": "armorBody",
@@ -45,7 +45,7 @@
               ],
               "pivot": [
                 -2,
-                0,
+                12,
                 0
               ],
               "uv": {
@@ -124,7 +124,7 @@
               ],
               "pivot": [
                 -2,
-                0,
+                12,
                 0
               ],
               "uv": {
@@ -196,7 +196,7 @@
           "name": "armorRightBoot",
           "pivot": [
             2,
-            3,
+            12,
             0
           ],
           "parent": "armorBody",
@@ -214,7 +214,7 @@
               ],
               "pivot": [
                 2,
-                0,
+                12,
                 0
               ],
               "uv": {
@@ -293,7 +293,7 @@
               ],
               "pivot": [
                 2,
-                0,
+                12,
                 0
               ],
               "uv": {
